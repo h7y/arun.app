@@ -2,7 +2,7 @@ body {
   width: 50%;
   margin: 0 auto;
   padding: 2rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ol {
@@ -19,7 +19,7 @@ ol {
   margin-right: 1.5rem;
   border: 1px solid #000000;
   border-radius: 3px;
-  padding: 0.4rem 0.85rem;
+  padding: 0.5rem 1rem;
 }
 
 .nav-active {

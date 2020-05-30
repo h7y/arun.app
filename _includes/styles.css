@@ -1,0 +1,33 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list-item {
+  margin-right: 1.5rem;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  padding: 0.4rem 0.85rem;
+}
+
+.nav-active {
+  background-color: #cecece;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000000;
+}

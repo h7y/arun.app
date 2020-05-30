@@ -4,17 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+  <title>{{ title }} | arun.app</title>
   {% set css %}
     {% include "styles.css" %}
   {% endset %}
-<style>
-  {{ css | cssmin | safe }}
-</style>
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
 </head>
 
 <body>
-  <h1>Hello!</h1>
+  <nav>
+    <ol class="nav-list">
+      <li class="nav-list-item {{ "nav-active" if title == "blog" }}">
+        <a class="nav-link" href="/">blog</a>
+      </li>
+      <li class="nav-list-item {{ "nav-active" if title == "about" }}">
+        <a class="nav-link" href="/about">about</a>
+      </li>
+      <li class="nav-list-item {{ "nav-active" if title == "projects" }}">
+        <a class="nav-link" href="/projects">projects</a>
+      </li>
+    </ol>
+  </nav>
   {{ content | safe }}
 </body>
 

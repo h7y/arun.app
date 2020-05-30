@@ -1,0 +1,9 @@
+---
+layout: layout.njk
+---
+
+<h1>{{ title }}</h1>
+<p>{{ date.toLocaleDateString() }}</p>
+<article>
+  {{ content | safe }}
+</article>

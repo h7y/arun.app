@@ -16,19 +16,24 @@
 
 <body>
   <nav>
-    <ol class="nav-list">
-      <li class="nav-list-item {{ "nav-active" if title == "blog" }}">
-        <a class="nav-link" href="/">blog</a>
+    <ol>
+      <li class="{{ "nav-active" if title == "blog" }}">
+        <a href="/">blog</a>
       </li>
       <li class="nav-list-item {{ "nav-active" if title == "about" }}">
-        <a class="nav-link" href="/about">about</a>
+        <a href="/about">about</a>
       </li>
       <li class="nav-list-item {{ "nav-active" if title == "projects" }}">
-        <a class="nav-link" href="/projects">projects</a>
+        <a href="/projects">projects</a>
       </li>
     </ol>
   </nav>
   {{ content | safe }}
+  <footer>
+    <a href="https://twitter.com/node_monk" target="_blank" rel="noreferrer">twitter</a>
+    <a href="https://github.com/Arun4033622" target="_blank" rel="noreferrer">github</a>
+    <a href="mailto:arun4033622@gmail.com" target="_blank" rel="noreferrer">email</a>
+  </footer>
 </body>
 
 </html>

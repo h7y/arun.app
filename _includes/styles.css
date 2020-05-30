@@ -66,3 +66,16 @@ footer a {
 .post-item {
   margin-bottom: 2rem;
 }
+
+.post-title-container {
+  margin-bottom: 3rem;
+}
+
+.post-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.post-date {
+  margin: 0.5rem 0 0 0;
+}

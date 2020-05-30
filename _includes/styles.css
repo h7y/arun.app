@@ -13,6 +13,7 @@ ol {
 .nav-list {
   display: flex;
   list-style-type: none;
+  margin-bottom: 3rem;
 }
 
 .nav-list-item {
@@ -22,12 +23,28 @@ ol {
   padding: 0.5rem 1rem;
 }
 
-.nav-active {
+.nav-active,
+.nav-list-item:hover {
   background-color: #cecece;
 }
 
 .nav-link {
   text-decoration: none;
   font-size: 1.5rem;
+  font-weight: normal;
   color: #000000;
+}
+
+.post-list {
+  list-style-type: none;
+}
+
+.post-link {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.post-item {
+  margin-bottom: 2rem;
 }

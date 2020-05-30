@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: blog
+---
+
+<main>
+  <ol class="post-list">
+    {%- for post in collections.post | reverse -%}
+      <li class="post-item">
+        <a class="post-link" href={{post.url}}>{{ post.data.title }}</a>
+        <p>{{ post.data.date.toLocaleDateString() }}</p>
+      </li>
+    {%- endfor -%}
+  </ol>
+</main>

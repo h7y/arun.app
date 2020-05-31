@@ -4,6 +4,8 @@
   "description": "Personal Blog",
   "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arun Kumar",

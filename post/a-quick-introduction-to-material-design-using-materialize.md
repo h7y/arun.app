@@ -9,7 +9,7 @@ tags: ["post"]
 
 ## What is Material Design?
 
-Material Design is a design language created by Google. According to material.io, Material Design aims to combine:
+Material Design is a design language created by Google. According to <a href="https://material.io/design" target="_blank" rel="noreferrer">material.io</a>, Material Design aims to combine:
 
 > …classic principles of good design with the innovation and possibility of technology and science. It aims to develop a single underlying system that allows for a unified experience across platforms and device sizes. Mobile precepts are fundamental, but touch, voice, mouse, and keyboard are all ﬁrst-class input methods.
 
@@ -62,11 +62,11 @@ Using Materialize, you can change the color of any HTML element by simply giving
 <p class="red">Lorem Ipsum</p>
 ```
 
-Additionally, you can also lighten or darken a color by giving it another class name lighten-1 or darken-1. For example, <h1 class=”blue lighten-1”>Sample Text</h1>. The 1 can be replaced with numbers up to 5 for lighten and up to 4 for darken. Higher numbers would apply lighter or darker shades of the color.
+Additionally, you can also lighten or darken a color by giving it another class name `lighten-1` or `darken-1`. For example, `<h1 class=”blue lighten-1”>Sample Text</h1>`. The 1 can be replaced with numbers up to 5 for lighten and up to 4 for darken. Higher numbers would apply lighter or darker shades of the color.
 
 ## Buttons
 
-To Materialize a button, just give it the class name btn. You can also add a cool animation to it by giving it another class waves-effect. If you need a larger button, btn-large class can be used. For example:
+To Materialize a button, just give it the class name `btn`. You can also add a cool animation to it by giving it another class `waves-effect`. If you need a larger button, `btn-large` class can be used. For example:
 
 ```html
 <!-- Materialized button without click animation -->
@@ -89,7 +89,7 @@ To Materialize a button, just give it the class name btn. You can also add a coo
 
 > In material design, everything should have a certain z-depth that determines how far raised or close to the page the element is.
 
-To apply a shadow-effect to an element, the z-depth-2 class can be used (2 can be replaced with numbers 1–5). For example:
+To apply a shadow-effect to an element, the `z-depth-2` class can be used (2 can be replaced with numbers 1–5). For example:
 
 ```html
 <div class="z-depth-2"><!-- Really cool stuff --></div>

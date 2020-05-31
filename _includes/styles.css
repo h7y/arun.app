@@ -1,5 +1,5 @@
 body {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding: 2rem;
   font-family: "Roboto", sans-serif;
@@ -82,6 +82,12 @@ footer a {
 
 .post-date {
   margin: 0.5rem 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 80%;
+  }
 }
 
 /**

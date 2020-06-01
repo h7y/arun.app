@@ -3,6 +3,7 @@ layout: post.njk
 title: A quick introduction to Material Design using Materialize
 date: 2018-03-07
 tags: ["post"]
+description: Materialize is a responsive front-end component library similar to Bootstrap. It offers everything that Bootstrap has to offer, but the difference is that Materialize follows material design principles.
 ---
 
 ![Mountain](../../img/mountain.png)

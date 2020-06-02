@@ -2,7 +2,7 @@
 layout: post.njk
 title: OAuth using Passport.js
 date: 2018-06-08
-tags: ["post"]
+tags: ["blog"]
 description: Passport.js is a middleware which implements authentication on Express-based web applications. It provides over 500+ strategies. What are these strategies? Strategies are used to authenticate requests.
 ---
 

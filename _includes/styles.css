@@ -63,7 +63,7 @@ footer a {
 
 .post-link {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
 }
 
@@ -86,6 +86,14 @@ footer a {
 
 .external-publications {
   margin-top: 8rem;
+}
+
+.newsletter-form {
+  margin-top: 4rem;
+}
+
+.newsletter-form div {
+  margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 600px) {

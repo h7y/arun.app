@@ -8,3 +8,12 @@ layout: layout.njk
 <article>
   {{ content | safe }}
 </article>
+<form action="https://buttondown.email/api/emails/embed-subscribe/arun" method="post" target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/arun', 'popupwindow')" class="newsletter-form">
+  <div>
+    <label for="bd-email">To know what I'm up to :)</label>
+  </div>
+  <input type="email" name="email" id="bd-email">
+  <input type="hidden" value="1" name="embed"></input>
+  <input type="submit" value="Subscribe"></input>
+</form>

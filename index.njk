@@ -1,14 +1,47 @@
 ---
-layout: layouts/home.njk
-eleventyNavigation:
-  key: Home
-  order: 1
+layout: layout.njk
+title: home
 ---
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<main>
+  <ol class="post-list">
+    {%- for post in collections.blog | reverse -%}
+    <li class="post-item">
+      <a class="post-link" href={{post.url}}>{{ post.data.title }}</a>
+      <p>{{ post.data.date.toLocaleDateString() }}</p>
+    </li>
+    {%- endfor -%}
+  </ol>
+  <div class="external-publications">
+    <h2>External publications</h2>
+    <ol class="post-list">
+      <li class="post-item">
+        <a class="post-link"
+          href="https://www.freecodecamp.org/news/how-i-dropped-out-and-got-a-job-as-a-developer-in-india-at-the-age-of-nineteen-3e8c30b83cce/"
+          target="_blank" rel="noopener noreferrer">How
+          I dropped out and got a job as a developer in India at the age of nineteen</a>
+      </li>
+      <li class="post-item">
+        <a class="post-link"
+          href="https://www.freecodecamp.org/news/a-quick-introduction-to-oauth-using-passport-js-65ea5b621a/"
+          target="_blank" rel="noopener noreferrer">OAuth using
+          Passport.js</a>
+      </li>
+      <li class="post-item">
+        <a class="post-link"
+          href="https://www.freecodecamp.org/news/an-quick-introduction-to-material-design-using-materialize-8a9b223c64f1/"
+          target="_blank" rel="noopener noreferrer">A
+          quick introduction to Material Design using Materialize</a>
+      </li>
+    </ol>
+  </div>
+  <form action="https://buttondown.email/api/emails/embed-subscribe/arun" method="post" target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/arun', 'popupwindow')" class="newsletter-form">
+    <div>
+      <label for="bd-email">To know what I'm up to :)</label>
+    </div>
+    <input type="email" name="email" id="bd-email" placeholder="Enter your email">
+    <input type="hidden" value="1" name="embed"></input>
+    <input type="submit" value="Subscribe"></input>
+  </form>
+</main>

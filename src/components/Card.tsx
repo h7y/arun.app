@@ -7,7 +7,7 @@ export interface Props {
   secHeading?: boolean;
 }
 
-const styles = {
+export const styles = {
   cardContainer: "my-6",
   titleLink:
     "text-skin-accent font-medium text-lg underline-offset-4 decoration-dashed focus-visible:no-underline focus-visible:underline-offset-0 inline-block",

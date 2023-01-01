@@ -48,6 +48,11 @@
     inline-block fill-transparent stroke-2 stroke-current 
     group-hover:fill-transparent;
   }
+  br {
+    display: block;
+    content: ""; 
+    margin-top: 16px; 
+}
   .prose {
     @apply prose-a:underline-offset-8 prose-ul:overflow-x-clip 
     prose-a:!decoration-dashed hover:prose-a:text-skin-accent 

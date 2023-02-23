@@ -44,3 +44,9 @@ img {
     color: #BA741A;
   }
 }
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}

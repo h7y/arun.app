@@ -32,6 +32,9 @@ hr {
 img {
   max-width: 100%;
 }
+li {
+  margin-bottom: 8px;
+}
 @media(prefers-color-scheme:dark){
 	body{
 		background-color: #000;
